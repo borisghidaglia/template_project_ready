@@ -1,0 +1,58 @@
+// Fonts
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'RobotoThin';
+  src: url(../fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: 'RobotoCondensedBold';
+  src: url(../fonts/RobotoCondensed-Bold.ttf);
+}
+@font-face {
+  font-family: 'RobotoCondensed';
+  src: url(../fonts/RobotoCondensed-Regular.ttf);
+}
+@font-face {
+  font-family: 'RobotoCondensedThin';
+  src: url(../fonts/RobotoCondensed-Light.ttf);
+}
+
+// Constantes
+// @white: #FFF;
+
+
+// Functions
+.transition(@type,@duration,@effect){
+    -webkit-transition: @type @duration @effect;
+    transition: @type @duration @effect;
+}
+.translate(@val1,@val2){
+    -webkit-transform: translate(@val1,@val2);
+    -moz-transform: translate(@val1,@val2);
+    transform: translate(@val1,@val2);
+}
+
+// Basics
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+    font-family: Roboto;
+}
+a {
+    &,&:hover,&:visited,&:focus{
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+}
