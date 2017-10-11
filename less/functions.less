@@ -1,0 +1,16 @@
+// EFFECTS
+.transition(@type,@duration,@effect){
+    -webkit-transition: @type @duration @effect;
+    transition: @type @duration @effect;
+}
+.translate(@val1,@val2){
+    -webkit-transform: translate(@val1,@val2);
+    -moz-transform: translate(@val1,@val2);
+    transform: translate(@val1,@val2);
+}
+
+// DIMENSIONS
+.full(){
+    height: 100%;
+    width: 100%;
+}
